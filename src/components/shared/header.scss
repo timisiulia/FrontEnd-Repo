@@ -1,0 +1,48 @@
+.header-wrapper {
+  display: flex;
+  flex: 1;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  flex-direction: row;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  z-index: 1;
+  background-color: white;
+
+  [class$="side"] {
+    display: flex;
+  }
+
+  .left-side {
+    justify-content: flex-start;
+  }
+
+  .right-side {
+    gap: 20px;
+    justify-content: flex-end;
+
+
+
+    .notification-icon {
+      position: relative;
+
+      &[data-notifications]:after {
+        content: attr(data-notifications);
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -1px;
+        text-align: center;
+        line-height: 1rem;
+        font-size: 0.7rem;
+        background: #925012;
+        border-radius: 50%;
+        right: -5px;
+        color: white;
+      }
+    }
+  }
+}

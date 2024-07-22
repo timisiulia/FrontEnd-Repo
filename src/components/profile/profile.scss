@@ -1,0 +1,43 @@
+.profile-container {
+  display: flex;
+  flex: 1;
+  padding: 40px 40px;
+  align-items: center;
+  flex-direction: column;
+
+  .profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0 30%;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: space-between;
+
+      .title {
+        display: flex;
+        font-weight: bold;
+      }
+      .value {
+        display: flex;
+      }
+    }
+  }
+
+  .logout-container {
+    padding-top: 40px;
+
+    .logout-button {
+      border: 2px solid lightpink;
+      background-color: whitesmoke;
+      padding: 10px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
